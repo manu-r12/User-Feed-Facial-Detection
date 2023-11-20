@@ -37,6 +37,7 @@ const CapturedImage = () => {
     const handleImageUpload = () => {
         if (imgUrl) {
           const image = new Image();
+          image.src = imgUrl;
         
           processImage(image);
          
@@ -58,9 +59,9 @@ const CapturedImage = () => {
             const detector = await faceDetection.createDetector(model, {runtime : 'tfjs'});
     
             const estimationConfig = {flipHorizontal: false};
-      
+        
             const faces = await detector.estimateFaces(image, estimationConfig);
-     
+          
             const detections = await faceapi.detectAllFaces(image, new faceapi.TinyFaceDetectorOptions()).withFaceExpressions().withAgeAndGender();
             
             setFaceDetections(detections[0])
