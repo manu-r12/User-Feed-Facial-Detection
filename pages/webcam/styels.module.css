@@ -1,0 +1,456 @@
+.blankWebCamInterFace{
+    width: 640px;
+    height: 480px;
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    height: 4px;
+    background-color: black;
+    width: 100px;
+}
+
+.linkOne{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(71, 168, 69);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.linkTwo{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    cursor: default;
+}
+
+.navContainer{
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 70px;
+}
+.webCamContainer{
+    color: white;
+    width: 100%;
+}
+.subContainer{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 140px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative; 
+    z-index: 1;
+    position: relative;
+
+}
+.main{
+    position: relative;
+    background-image: url("/images/ice.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5); /* Adjust the alpha (last) value for opacity */
+    z-index: 0; /* Adjust the z-index to control the stacking order */
+  }
+
+.buttonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+.startButton{
+    width: 170px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color:black;
+    font-size: 20px;
+    border-radius: 30px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s;
+    border: 2px solid black;
+    color: rgb(255, 255, 255);
+
+}
+.startButton:hover{
+    background-color:white;
+    color: rgb(0, 0, 0);
+
+}
+.selectButton{
+    width: 170px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color:#007ed0ff;
+    font-size: 20px;
+    border-radius: 30px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s;
+    color: white;
+
+}
+.selectButton:hover{
+    background-color: rgb(71, 168, 69);
+    color: white;
+}
+.buttonContainer > h1{
+    font-size: 25px;
+    
+    font-weight: 400;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.buttons > h1{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.popUpContainer{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.385);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 8;
+}
+
+
+
+.popBox{
+    width: 780px;
+    height: 700px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 40px;
+
+}
+
+.popBox > h1{
+    font-weight: 500;
+}
+
+.popBox > img{
+    border-radius: 20px;
+    width: 640px;
+    height: 480px;
+}
+
+.retakeButton{
+    width: 170px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 30px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s;
+
+}
+
+.capturedImageInPopBox{
+    width: 10px;
+    height: 480px;
+}
+   
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    /* position: relative; */
+}
+
+.imageSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.imageContainer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.main{
+    height: 100vh;
+}
+
+.functionsContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.capturedImage{
+    border-radius: 10px;
+    
+}
+
+
+.functionsContainer > h1{
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-bottom: 50px;
+   
+
+}
+
+.faceInformations{
+    color: black;
+    font-size: 5px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.557);
+    /* border-radius: 10px; */
+    width: 100%;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 10px;
+
+}
+
+.faceInformations > h1{
+    color: white;
+    border-radius: 10px;
+    font-weight: 400;
+    padding: 5px 10px;
+    background-color: rgb(71, 168, 69);
+}
+
+@media screen and (max-width: 767px) {
+    .main{
+        height: 100%;
+    }
+
+    .subContainer{
+         flex-direction: column;
+         gap: 10px;
+    }
+
+    .buttons{
+        flex-direction: row;
+    }
+    .blankWebCamInterFace{
+        width: 640px;
+        height: 280px;
+    }
+
+    .webCamContainer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .blankWebCamInterFace{
+        /* width: 100%; */
+        border-radius: 0;
+    }
+
+    .Container{
+        height: 90vh;
+        width: 100%;
+    }
+
+    .navContainer{
+        margin-bottom: 20px;
+        margin-top: 0;
+        /* margin-top: 40px; */
+    }
+
+    .subContainer{
+        padding: 0;
+    }
+    .imageSection{
+        gap: 10px;
+        font-size: 12px;
+    }
+    .functionsContainer > h1{
+        display: none;
+    }
+
+    
+    .startButton{
+        width: 110px;
+        color: white;
+        height: 40px;
+        font-size: 15px;
+    }
+    .selectButton{
+        width: 110px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .buttonContainer > h1 {
+        width: 200px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .buttons > h1{
+        font-size: 18px;
+        width: 200px;
+        display: none;
+        text-align: center;
+    }
+
+    .video{
+        /* width: 440px;
+        height: 280px; */
+    }
+
+    .retakeButton{
+        width: 110px;
+        font-size: 15px;
+        color: white;
+        height: 40px;
+
+    }
+
+    .popBox{
+      padding: 80px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .popBox > img{
+        border-radius: 0px;
+        width: 380px;
+   
+    }
+
+    .imageSection{
+        flex-direction: column;
+     
+    }
+    
+    .container{
+        height: 100%;
+        padding: 0;
+    }
+    
+    .capturedImage{
+            border-radius: 0;
+            /* width: 100%; */
+            /* height: 100%; */
+            
+            object-fit: contain;
+    }
+
+    .imageContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+
+
+       
+    }
+
+    .container > .navContainer{
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    .linkOne{
+        height: 30px;
+        width: 30px;
+        font-size: 15px;
+    }
+    .linkTwo{
+        height: 30px;
+        width: 30px;
+        font-size: 15px;
+
+    }
+    .line{
+        height: 2px;
+    }
+   
+}

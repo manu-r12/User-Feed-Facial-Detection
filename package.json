@@ -9,12 +9,34 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mediapipe/face_detection": "^0.4.1646425229",
+    "@mui/icons-material": "^5.14.18",
+    "@mui/material": "^5.14.18",
+    "@reduxjs/toolkit": "^1.9.7",
+    "@tensorflow-models/face-detection": "^1.0.2",
+    "@tensorflow-models/face-landmarks-detection": "^1.0.5",
+    "@tensorflow/tfjs-backend-webgl": "^4.13.0",
+    "@tensorflow/tfjs-converter": "^4.13.0",
+    "@tensorflow/tfjs-core": "^4.13.0",
+    "@tensorflow/tfjs-node": "^4.13.0",
     "@types/node": "20.9.1",
     "@types/react": "18.2.37",
     "@types/react-dom": "18.2.15",
+    "@vladmandic/face-api": "^1.7.12",
+    "face-api.js": "^0.22.2",
     "next": "14.0.3",
+    "nextjs-toploader": "^1.6.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-redux": "^8.1.3",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@types/redux-logger": "^3.0.12",
+    "@types/redux-persist": "^4.3.1"
   }
 }

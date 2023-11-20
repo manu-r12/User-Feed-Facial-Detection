@@ -1,0 +1,37 @@
+.container{
+    color: rgb(0, 0, 0);
+    display: flex;
+    font-size: 35px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    font-weight: 500;
+    margin-bottom: 100px;
+    z-index: 2;
+    position: relative;
+}
+
+.fakeLinks{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 767px) {
+
+
+    .fakeLinks{
+        font-size: 11px;
+        gap: 8px;
+    }
+    .container{
+        font-size: 25px;
+        margin-bottom: 80px;
+
+    }
+
+    
+}
