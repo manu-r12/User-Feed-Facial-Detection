@@ -1,13 +1,11 @@
 .main{
   height: 100vh;
   width: 100%;
-  /* background-image: url("/images/ice.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative; */
   background-color: white;
   position: relative;
 }
 
-
+.info{
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}

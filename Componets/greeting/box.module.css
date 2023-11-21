@@ -1,0 +1,58 @@
+
+
+
+  
+  .greeting{
+    border-radius: 20px;
+    width: 40%;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #6C3428;
+    color: rgb(230, 207, 207);
+
+    font-family: "Poppins",sans-serif;
+    padding: 30px;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    letter-spacing: 1.1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
+    
+  }
+
+  .p{
+    
+    word-wrap: break-word; 
+
+  }
+ 
+  .greeting > button{
+    border: none;
+    background-color: #BA704F;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat",sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 400px;
+    margin-bottom: 20px;
+  }
+
+  
+  
+  @media screen and (max-width: 767px) {
+
+    .greeting{
+        display: none;
+    }
+  }
+   

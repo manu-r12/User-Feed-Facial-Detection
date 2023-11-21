@@ -122,15 +122,7 @@ const CaptureImage = () => {
   return (
     <div className={styles.main} style={{margin: "0"}}>
         <div className={styles.Container}>
-                <div className={styles.navContainer}>
-                    <div className={styles.linkOne}>
-                      1
-                    </div>
-                    <div className={styles.line}/>
-                    <div className={styles.linkTwo}>
-                        2
-                    </div>
-                </div>
+               
                {isPopOpen && <div className={styles.popUpContainer}>
                     <div className={styles.popBox}>
                         <h1>Your Image</h1>

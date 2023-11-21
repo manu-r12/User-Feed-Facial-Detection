@@ -211,7 +211,8 @@
     font-family: "Montserrat", sans-serif;
     letter-spacing: 1px;
     cursor: pointer;
-    transition: all .5s;
+    transition: all .5;
+    color: white;
 
 }
 
@@ -244,6 +245,7 @@
     width: 100%;
     height: 100%;
     position: relative;
+
 }
 
 .main{
@@ -301,6 +303,102 @@
     background-color: rgb(71, 168, 69);
 }
 
+.containerOne{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.ImageContainer{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: url("/images/ice.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   flex-direction: column;
+}
+
+.ImageContainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5); /* Adjust the alpha (last) value for opacity */
+    z-index: 0; /* Adjust the z-index to control the stacking order */
+
+  }
+
+  .ImageContainer > button {
+    z-index: 1;
+    margin-top: 50px;
+    width: 170px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color:#007ed0ff;
+    font-size: 20px;
+    border-radius: 30px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s;
+    color: white;
+   
+  }
+
+  .ImageContainer > button:hover{
+    color: white;
+    background-color: black;
+  }
+
+.containerOne > canvas{
+    position: absolute;
+}
+
+/* .image{
+    object-fit: contain;
+}
+
+.canvas{
+    object-fit: contain;
+} */
+.link{
+    z-index: 1;
+
+    width: 170px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color:rgb(0, 0, 0);
+    font-size: 20px;
+    color: white;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s;
+    gap: 0;
+
+}
+
+
+.link:hover{
+    gap: 10px;
+}
 @media screen and (max-width: 767px) {
     .main{
         height: 100%;
